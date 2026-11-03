@@ -6,7 +6,6 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [count1, setCount1] = useState(0)
 
   return (
     <>
@@ -19,22 +18,15 @@ function App() {
         <div>
           <h1>Get started</h1>
           <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
+            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
         <button
           type="button"
           className="counter"
-          onClick={() => setCount((count) => count+3)}
+          onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
-        </button>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount1((count1) => count1 - 1)}
-        >
-          Count is {count1}
         </button>
       </section>
 
